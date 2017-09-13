@@ -7,10 +7,10 @@ def userInput():
     input_list = sides.split()
     input_list = [int(i) for i in input_list]
     for i in input_list:
-        if input_list.count(i) < "3" or input_list.count(i) > "3":
+        if input_list.count(i) < 3 or input_list.count(i) > 3:
             print("\nPlease enter 3 numbers or try entering three numbers seperated by spaces.\n")
             userInput()
-        if input_list.count(i) == "3":
+        if input_list.count(i) == 3:
             c = max(sides)
             a = next(sides)
             b = next(sides)
@@ -31,10 +31,10 @@ def again():
         input_list = sides.split()
         input_list = [int(i) for i in input_list]
         for i in input_list:
-            if input_list.count(i) < "3" or input_list.count(i) > "3":
+            if input_list.count(i) < 3 or input_list.count(i) > 3:
                 print("\nPlease enter 3 numbers or try entering three numbers seperated by spaces.\n")
                 userInput()
-            if input_list.count(i) == "3":
+            if input_list.count(i) == 3:
                 c = max(sides)
                 a = next(sides)
                 b = next(sides)

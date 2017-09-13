@@ -16,6 +16,7 @@ def question():
         print(random.choice(answers) + "\n")
     else:
         print "huh?\n"
+        question()
     again()
 
 def again():
@@ -29,9 +30,12 @@ def again():
         else:
             print "huh?"
         again()
-    else:
+    if question == "no":
         print("\nOkay, bye!\n")
         sys.exit(0)
+    else:
+        print("\nhuh?\n")
+        again()
 
 print("\nYou may ask the magic 8 ball anything you desire!\n")
 question()
